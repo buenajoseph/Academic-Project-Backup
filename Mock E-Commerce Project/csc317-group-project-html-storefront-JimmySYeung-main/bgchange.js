@@ -1,0 +1,35 @@
+function bgchange1() {
+    document.body.style.backgroundColor = "#f3f3f3";
+    document.body.style.backgroundImage = "url('background/spiralbook.jpg')";
+}
+
+function bgchange2() {
+    document.body.style.backgroundColor = "#f3f3f3";
+    document.body.style.backgroundImage = "url('background/alligator1.jpg')";
+}
+
+function bgchange3() {
+    document.body.style.backgroundColor = "#f3f3f3";
+    document.body.style.backgroundImage = "url('background/whiteleafwater.jpg')";
+}
+
+function bgchange4() {
+    document.body.style.backgroundColor = "#f3f3f3";
+    document.body.style.backgroundImage = "url('background/beachsand.jpg')";
+}
+
+function infoOn() {
+    document.getElementById("overlay-companyInfo").style.display = block;
+}
+
+function infoOff() {
+    document.getElementById("overlay-companyInfo").style.display = none;
+}
+
+function faqOn() {
+    document.getElementById("overlay-companyInfo").style.display = block;
+}
+
+function faqOff() {
+    document.getElementById("overlay-companyInfo").style.display = none;
+}

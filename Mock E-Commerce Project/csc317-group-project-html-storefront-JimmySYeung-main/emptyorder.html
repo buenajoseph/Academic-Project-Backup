@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../storestyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="account">
+
+    <table background="../background/alligator1.jpg" width="70%" height="100" align="center">
+        <tr>
+            <label for="category"></label>
+
+            <th scope="col">
+                <div class="dropdown">
+                    <img src="../woodbar/categories1.png">
+                    <div class="dropdown-content">
+                        <a href="../index.html">All</a>
+                        <a href="../textbooks.html">Textbooks</a>
+                        <a href="../manga.html">Manga</a>
+                        <a href="../toys.html">Anime Figurines</a>
+                    </div>
+                </div>
+            </th>
+		
+		 <div class="woodbar">
+            <th scope="col"><a href="../index.html"><img src="../woodbar/home1.png" 
+                               <div class="wrap">
+                    <th scope="col">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <span class="fa fa-search" class="form-inline">
+                                        <input autofocus placeholder="search" class="form-inline" type="text"
+                                            autocomplete="off" name="search" id="search" />
+                                    </span>
+                                </span>
+                            </div>
+
+                            <!--This shows the list of search in website-->
+                            <ul class="list-group" id="list"></ul>
+                        </div>
+                    </th>
+                </div>
+            </div>
+            <script src="search.js"></script>
+            <th scope="col"><a href="../account.html"><img src="../woodbar/account1.png" class="wood"></th>
+            <th scope="col"><a href="../products/empty.html"><img src="../woodbar/cart1.png" class="wood"></th>
+
+        </tr>
+    </table>
+
+    <br><br>
+    <div id="fullTrack">
+
+        <div class="fullTrackrow">
+            <h2>Item</h2>
+            <h2>Time</h2>
+            <h2>Name</h2>
+            <h2>Quantity</h2>
+            <h2>Price</h2>
+        </div>
+    </div>
+
+    <script src="trackscript.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../storestyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Sociology</title>
+</head>
+
+<body class="products">
+    <table background="../background/alligator1.jpg" width="70%" height="100" align="center">
+        <tr>
+            <label for="category"></label>
+
+            <th scope="col">
+                <div class="dropdown">
+                    <img src="../woodbar/categories1.png">
+                    <div class="dropdown-content">
+                        <a href="../index.html">All</a>
+                        <a href="../textbooks.html">Textbooks</a>
+                        <a href="../manga.html">Manga</a>
+                        <a href="../toys.html">Anime Figurines</a>
+                    </div>
+                </div>
+            </th>
+
+            <th scope="col"><a href="../index.html"><img src="../woodbar/home1.png" class="wood"></th>
+            <div class="wrap">
+                <th scope="col">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <span class="fa fa-search" class="form-inline">
+                                    <input autofocus placeholder="search" class="form-inline" type="text"
+                                        autocomplete="off" name="search" id="search" />
+                                </span>
+                            </span>
+                        </div>
+
+                        <!--This shows the list of search in website-->
+                        <ul class="list-group" id="list"></ul>
+                        <script src="searchp.js"></script>
+                    </div>
+            </div>
+            <th scope="col"><a href="../account.html"><img src="../woodbar/account1.png" class="wood"></th>
+            <th scope="col"><a href="../products/empty.html"><img src="../woodbar/cart1.png" class="wood"></th>
+
+        </tr>
+    </table>
+
+    <div class="productpage">
+        <h1 class="producttitle">Introduction to Sociology</h1>
+        <img class="productimg" src="../books/introtosociology.jpg" alt="Introduction to Sociology">
+        <p class="productdescription">This is a book about the sociology.</p>
+        <h2 class="productprice">$49.99</h2>
+
+        <div class="cartAdd">
+            <input type="number" class="quantity" id="quantity" name="quantity" min="1" max="30" value="1">
+            <button  class="buyall" onclick="buyMax()">Buy All</button>
+            <button type="submit" onclick="addToCart('introtosociology')" class="addCart">
+            </button>
+        </div>
+
+        <br>
+    </div>
+    <br>
+
+    <!--Other products-->
+    <div class="productscroll">
+        <a href="whitecollarcrimebook.html" class="productlink">
+            <div class="productpreview">
+                <img class="productpreviewimg" src="../books/whitecollarcrimebook.jpg" alt="Trusted Criminals">
+                <h3 class="productpreviewtext">Trusted Criminals</h3>
+                <h3 class="productpreviewtext">$69.99</h3>
+            </div>
+        </a>
+        <a href="deadpoolpikachu.html" class="productlink">
+            <div class="productpreview">
+                <img class="productpreviewimg" src="../toys/deadpoolpikachu.JPG" alt="Deadpool Pikachu">
+                <h3 class="productpreviewtext">Deadpool Pikachu</h3>
+                <h3 class="productpreviewtext">$19.99</h3>
+            </div>
+        </a>
+        <a href="doggycoin.html" class="productlink">
+            <div class="productpreview">
+                <img class="productpreviewimg" src="../toys/doggycoin.JPG" alt="Doggy coin">
+                <h3 class="productpreviewtext">Doggy Coin</h3>
+                <h3 class="productpreviewtext">$4.99</h3>
+            </div>
+        </a>
+        <a href="heroacademiavol1.html" class="productlink">
+            <div class="productpreview">
+                <img class="productpreviewimg" src="../books/heroacademiavol1.jpg" alt="My Hero Academia vol. 1">
+                <h3 class="productpreviewtext">My Hero Academia vol. 1</h3>
+                <h3 class="productpreviewtext">$9.99</h3>
+            </div>
+        </a>
+        <a href="introtojava.html" class="productlink">
+            <div class="productpreview">
+                <img class="productpreviewimg" src="../books/introtojava.jpg" alt="Introduction to Java Programming">
+                <h3 class="productpreviewtext">Introduction to Java Programming</h3>
+                <h3 class="productpreviewtext">$29.99</h3>
+            </div>
+        </a>
+        <a href="introtophysicalanthropology.html" class="productlink">
+            <div class="productpreview">
+                <img class="productpreviewimg" src="../books/introtophysicalanthropology.jpg"
+                    alt="Introduction to Physical Anthropology">
+                <h3 class="productpreviewtext">Introduction to Physical Anthropology</h3>
+                <h3 class="productpreviewtext">$149.99</h3>
+            </div>
+        </a>
+        <a href="AmericanDream.html" class="productlink">
+            <div class="productpreview">
+                <img class="productpreviewimg" src="../books/AmericanDream.jpg" alt="American Dream">
+                <h3 class="productpreviewtext">Chasing the American Dream</h3>
+                <h3 class="productpreviewtext">$9.99</h3>
+            </div>
+        </a>
+        <a href="IzukuMidoriya.html" class="productlink">
+            <div class="productpreview">
+                <img class="productpreviewimg" src="../toys/IzukuMidoriya.jpg" alt="Izuku Midoriya">
+                <h3 class="productpreviewtext">Izuku Midoriya Figure</h3>
+                <h3 class="productpreviewtext">$19.99</h3>
+            </div>
+        </a>
+        <a href="McFarlane.html" class="productlink">
+            <div class="productpreview">
+                <img class="productpreviewimg" src="../toys/McFarlane.jpg" alt="Ochaco Uraraka">
+                <h3 class="productpreviewtext">Ochaco Uraraka Figure</h3>
+                <h3 class="productpreviewtext">$19.99</h3>
+            </div>
+        </a>
+        <a href="python.html" class="productlink">
+            <div class="productpreview">
+                <img class="productpreviewimg" src="../books/python.jpg" alt="Python Crash Course">
+                <h3 class="productpreviewtext">Python Crash Course</h3>
+                <h3 class="productpreviewtext">$14.99</h3>
+            </div>
+        </a>
+        <a href="websiteplayground.html" class="productlink">
+            <div class="productpreview">
+                <img class="productpreviewimg" src="../books/websiteplayground.jpg" alt="Web Design Playground">
+                <h3 class="productpreviewtext">Web Design Playground</h3>
+                <h3 class="productpreviewtext">$29.99</h3>
+            </div>
+        </a>
+    </div>
+
+    <script src="productscripts.js"></script>
+</body>
+
+</html>

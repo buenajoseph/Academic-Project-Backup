@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="storestyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="storefront">
+<table background="background/alligator1.jpg" width="70%" height="100" align="center">
+   <tr>
+        <label for="category"></label>
+	
+
+        <th scope="col">
+           <div class="dropdown">
+                <img src="woodbar/categories1.png">
+                <div class="dropdown-content">
+                    <a href="index.html">All</a>
+                    <a href="textbooks.html">Textbooks</a>
+                    <a href="manga.html">Manga</a>
+                    <a href="toys.html">Anime Figurines</a>
+                </div>
+            </div>
+        </th>
+
+        <div class="woodbar">
+            <th scope="col"><a href="index.html"><img src="woodbar/home1.png" class="wood"></th>
+            <div class="wrap">
+                <th scope="col">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <span class="fa fa-search" class="form-inline">
+                                        <input autofocus placeholder="search" class="form-inline" type="text"
+                                               autocomplete="off" name="search" id="search"/>
+                                    </span>
+                                </span>
+                        </div>
+
+                        <!--This shows the list of search in website-->
+                        <ul class="list-group" id="list"></ul>
+                    </div>
+                </th>
+            </div>
+        </div>
+        <script src="search.js"></script>
+        <th scope="col"><a href="account.html"><img src="woodbar/account1.png" class="wood"></th>
+        <th scope="col"><a href="products/empty.html"><img src="woodbar/cart1.png" class="wood"></th>
+
+    </tr>
+</table>
+
+<br>
+<div class="previews" align="center">
+    <div class="hook" class="storeproducts">
+        <img src="background/alligatorclosedmouth.png">
+        <h2>Check out some books and toys!</h2>
+    </div>
+    <br>
+
+    <div class="productbackground">
+        <a href="products/heroacademiavol1.html"><img src="books/heroacademiavol1.jpg"
+                                                      class="productvisible productcell"></a>
+        <a href="products/introtojava.html"><img src="books/introtojava.jpg" class="productvisible productcell"></a>
+        <a href="products/introtophysicalanthropology.html"><img src="books/introtophysicalanthropology.jpg"
+                                                                 class="productvisible productcell"></a>
+        <a href="products/introtosociology.html"><img src="books/introtosociology.jpg"
+                                                      class="productvisible productcell"></a>
+        <a href="products/python.html"><img src="books/python.jpg" class="productvisible productcell"></a>
+        <a href="products/AmericanDream.html"><img src="books/AmericanDream.jpg"
+                                                   class="productvisible productcell"></a>
+
+        <a href="products/websiteplayground.html"><img src="books/websiteplayground.jpg"
+                                                       class="productvisible productcell"></a>
+        <a href="products/whitecollarcrimebook.html"><img src="books/whitecollarcrimebook.jpg"
+                                                          class="productvisible productcell"></a>
+        <a href="products/deadpoolpikachu.html"><img src="toys/deadpoolpikachu.JPG"
+                                                     class="productvisible productcell"></a>
+        <a href="products/doggycoin.html"><img src="toys/doggycoin.JPG" class="productvisible productcell"></a>
+        <a href="products/IzukuMidoriya.html"><img src="toys/IzukuMidoriya.jpg"
+                                                   class="productvisible productcell"></a>
+        <a href="products/McFarlane.html"><img src="toys/McFarlane.jpg" class="productvisible productcell"></a>
+    </div>
+    <br><br><br><br>
+    <div class="hook">
+        <h2>Some news!</h2>
+    </div>
+    <br>
+    <iframe src="https://www.gamespot.com" width="85%" height="280"> name="frame_1"</iframe>
+    <br>
+</div>
+
+<div class="woodalign">
+    <a href=" companyinfo.html"><img src="woodbar/companyinfo1.png" class="wood">
+        <a href="faq.html"><img src="woodbar/FAQ1.png" class="wood">
+</div>
+
+
+</body>
+
+</html>

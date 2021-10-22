@@ -1,0 +1,867 @@
+.previews {
+    background-color: none !important;
+    border: lem solid green;
+}
+
+.list-group {
+    position: absolute;
+
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    perspective: 1000px;
+    Display: block;
+    border: none;
+    z-index: 1;
+    transform-origin: top center;
+    animation: growDown 0.25s ease-in-out forwards
+}
+
+
+
+.searchButton {
+    position: relative;
+    background-image: url("woodbar/search.jpg");
+    width: 110px;
+    height: 30px;
+    top: 7px;
+    animation-duration: 3s;
+}
+
+
+/* These changes the categories setting*/
+
+.dropdown {
+    position: relative;
+    Display: block;
+    z-index: 1;
+    width: auto;
+}
+
+.dropdown:hover {
+    Display: block;
+}
+
+.dropdown-content{
+    position: absolute;
+    font: 15px Arial, sans-serif, bold;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    width: auto;
+    height: auto;
+    perspective: 1000px;
+    Display: none;
+    transform-origin: top center;
+    animation: growDown 0.25s ease-in-out forwards;
+    text-decoration: none;
+
+}
+
+
+
+.dropdown-content a, .dropdown-content button{
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    padding: 10px 12px;
+    Display: block;
+    
+}
+.dropdown-content button{
+    width: 84px;
+}
+
+.dropdown-content a{
+    width: auto;
+}
+
+
+
+.dropdown-content a:hover, .dropdown-content button:hover{
+    background-color: yellow;
+}
+
+.dropdown:hover .dropdown-content{
+    Display: block;
+}
+
+.dropdown:hover .dropbtn {
+    /*
+    background-color: brown;
+    */
+    background-color: rgb(215, 238, 223);
+}
+
+.empty {
+    background-color: rgb(215, 238, 223);
+}
+
+.backgroundads {
+    animation-name: adschange;
+    animation-duration: 6s;
+    width: 309px;
+    height: 479px;
+    animation-iteration-count: infinite;
+}
+
+.backgroundads1 {
+    animation-name: adschange1;
+    animation-duration: 6s;
+    width: 309px;
+    height: 479px;
+    animation-iteration-count: infinite;
+}
+
+.companyinfo {
+    background-color: rgb(215, 238, 223);
+    color: white;
+}
+
+.faq {
+    background-color: rgb(215, 238, 223);
+    color: white;
+}
+
+.hook {
+    background-color: purple;
+    border: 3px solid yellow;
+
+    animation-name: hookanimate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 300px;
+
+}
+
+.creditcard {
+    background-color: palegreen;
+    border: 15px solid white;
+
+    animation-name: credit;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.accountintro {
+
+    color: black;
+    border: none !important;
+    Display: grid;
+    width: 400px;
+    padding:10px;
+    font: 15px phosphate;
+}
+
+.account-orders {
+    background-color: rgba(195, 195, 195, 0.9);
+}
+
+.companyinfobox {
+    background-image: url("background/alligator1.jpg");
+    border: solid black;
+    Display: grid;
+    width: 700px;
+    margin: auto;
+
+}
+
+.faqinfobox {
+    background-image: url("background/alligator1.jpg");
+    margin: auto;
+    width: 90%;
+}
+
+body.storefront {
+    background-color: rgb(215, 238, 223);
+}
+
+.products {
+    background-color: rgb(215, 238, 223);
+    color: white;
+}
+
+.addCart {
+    background-image: url("products/addtocart.jpg");
+    width: 125px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
+.quantity {
+    height: 50px;
+    width: 50%;
+    justify-self: right;
+    align-self: center;
+}
+
+.buyall {
+    height: 50px;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+body.account {
+
+    background-color: rgb(215, 238, 223);
+}
+
+body.viewcredit {
+    background-color: rgb(215, 238, 223);
+}
+
+.login {
+    background-color: rgb(215, 238, 223);
+    color: white;
+}
+
+body.login-help {
+    background-color: rgb(215, 238, 223);
+    color: white;
+}
+
+.redwoodbg {
+    background-image: url("woodbar/redwoodnavbar.jpg")
+}
+
+.wood {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.woodalign {
+    Display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.redwood {
+    opacity: 1;
+    Display: block;
+    width: auto;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.accountredwood {
+    opacity: .7;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.accountbutton {
+    opacity: .9;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.accountbutton:hover{
+    transform:scale(1.1);
+}
+
+.productvisible {
+    opacity: .9;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.productvisible:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.wood:hover {
+    opacity: .8;
+    transform: scale(1.1);
+}
+
+.redwood:hover {
+    opacity: .6;
+
+}
+
+.accountredwood:hover {
+    opacity: 1;
+}
+
+.accountbutton:hover {
+    opacity: 1;
+}
+
+.productvisible:hover {
+    opacity: 1;
+}
+
+/*These keyframes create animation without using javascript
+*/
+@keyframes credit {
+
+    0% {
+        background-color: palegreen;
+    }
+
+    20% {
+        background-color: lightgreen;
+    }
+
+
+    40% {
+        background-color:green;
+    }
+
+    60% {
+        background-color: lightgreen;
+    }
+
+    80% {
+        background-color: palegreen;
+    }
+
+}
+
+@keyframes hookanimate {
+    from {
+        background-color: rgb(235, 25, 235)
+    }
+
+    to {
+        background-color: yellow
+    }
+}
+
+/* These ads change affect the login and register's advertisement*/
+@keyframes adschange {
+    0% {
+        background-image: url("books/AmericanDream.jpg");
+    }
+
+    25% {
+        background-image: url("books/heroacademiavol1.jpg");
+    }
+
+    50% {
+        background-image: url("books/introtojava.jpg")
+    }
+
+    75% {
+        background-image: url("books/websiteplayground.jpg")
+    }
+
+    100% {
+        background-image: url("books/AmericanDream.jpg");
+    }
+}
+
+@keyframes adschange1 {
+    0% {
+        background-image: url("books/introtojava.jpg");
+    }
+
+    25% {
+        background-image: url("books/python.jpg");
+    }
+
+    50% {
+        background-image: url("books/whitecollarcrimebook.jpg");
+    }
+
+    75% {
+        background-image: url("books/introtosociology.jpg");
+    }
+
+    100% {
+        background-image: url("books/introtophysicalanthropology.jpg");
+    }
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+
+    75% {
+        transform: scaleY(0.75);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+/* This adjust the height of nav bar*/
+
+.productpage {
+    Display: grid;
+    width: 60%;
+    height: 800px;
+    grid-template-columns: 4fr 1fr 3fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    margin-left: 20%;
+    Padding: 30px;
+
+}
+
+.producttitle {
+    background-color:whitesmoke;
+    align-self: center;
+    justify-self: center;
+    grid-area: 1/1/1/4;
+    color:black;
+    padding:10px;
+}
+
+.productimg {
+    grid-area: 2/1/4/2;
+    width: 80%;
+}
+
+.productdescription {
+    background-color:whitesmoke;
+    grid-area: 2/2/3/4;
+    font-size: 20px;
+    padding: 20px;
+    color:black;
+    height: 50%;
+}
+
+.productprice {
+    align-self: center;
+    justify-self: center;
+    grid-area: 3/2/3/3;
+    color:black;
+}
+
+.productscroll {
+    Display: flex;
+    flex-flow: row;
+    overflow: auto;
+    width: 80%;
+    max-height: 300px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+.productpreview {
+    Display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 200px 15px 15px;
+    padding: 1%;
+    border: solid black 5px;
+    margin: 0;
+}
+
+.productpreviewimg {
+    width: 250px;
+    height: 90%;
+    margin: 0;
+    border: 0;
+}
+
+.productpreviewtext {
+    justify-self: center;
+    align-self: center;
+    color: black;
+    font-size: 12px;
+    margin: 0;
+    border: 0;
+}
+
+.cartAdd {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: 3/3/3/3;
+    width: 100%;
+}
+
+
+
+/*These affects the change of product page's own list of products*/
+.productlink {
+    text-decoration: none;
+    margin: 0;
+    border: 0;
+}
+
+.productbackground {
+    Display: grid;
+    width: 70%;
+    max-height: 500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding: 10px;
+}
+
+.productcell {
+    width: 100%;
+    height: 240px;
+}
+
+.categorybackground {
+    margin-left: 15%;
+    Display: grid;
+    width: 70%;
+    max-height: 250px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(221, 148, 52);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.accountbackground {
+    background-image: url("background/alligator1.jpg");
+    margin: auto;
+    width: 70%;
+}
+
+.cart {
+    background-image: url("background/alligator1.jpg");
+    width: 80%;
+    margin: auto;
+}
+
+.fullcartrow {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 2fr 3fr 1fr 1fr 1fr;
+    border: solid black 1px;
+    justify-items: center;
+    align-items: center;
+    background-color:white;
+}
+
+.fullTrackrow {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 2fr 3fr 1fr 1fr 1fr;
+    border: solid black 1px;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+}
+
+.nameinput{
+    text-overflow: ellipsis;
+}
+
+.itemtotal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#total{
+    width: 30px;
+}
+
+.trackimg {
+    width: 30%;
+
+    background-color: rgb(254, 216, 177);
+}
+
+.cartimg {
+    width: 30%;
+}
+
+.carttotal {
+    display: grid;
+    margin-left: 70%;
+    margin-right: 10%;
+    grid-template-columns: 1fr 1fr;
+    border: solid black 1px;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+}
+.removeallbutton{
+    background: transparent;
+    border:none;
+}
+.removeallbutton:hover{
+    opacity:.8;
+}
+.removeallbutton:active {
+
+    transform: scale(.95);
+}
+
+.checkoutbtn {
+    grid-column: 1/span 2;
+    justify-items: center;
+    align-items: center;
+    border:none;
+    background: transparent;
+
+}
+.checkoutbtn:hover{
+    opacity: .8;
+}
+.checkoutbtn:active{
+    transform:scale(.95);
+}
+
+.ccgrid {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+}
+
+.savecc {
+    width: 50%;
+    justify-self: center;
+}
+
+/*Checkout*/
+.checkout{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 60% 5% 35%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+}
+
+.checkouttitle{
+    font-size: 30px;
+}
+
+.payment{
+    grid-column: 1/ span 1;
+    grid-row: 1/span 2;
+    display: grid;
+    width: 100%;
+    background-color: cornsilk;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+}
+
+.paymentmethod{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.checkouttext1{
+    grid-column: 1/span all;
+    grid-row: 1/span 1;
+}
+
+.checkoutinput1{
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+    height: 22px;
+    width: 80%;
+}
+
+.checkouttext2{
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+}
+
+.checkoutinput2{
+    grid-column: 1/span 1;
+    grid-row: 4/span 1;
+    height: 16px;
+    width: 80%;
+}
+
+.checkouttext3{
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+}
+
+.securitycode{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
+}
+
+.checkoutinput3{
+    height: 22px;
+    width: 40px;
+}
+
+.checkoutinput4{
+    height: 16px;
+    width: 60px;
+}
+
+.checkoutinput5{
+    height: 16px;
+    width: 40px;
+}
+
+.billing{
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr 1fr;
+}
+
+.checkouttext4{
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+}
+
+.checkoutinput6{
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+    height: 16px;
+    width: 80%;
+}
+
+.checkouttext5{
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+}
+
+.checkoutinput7{
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+    height: 16px;
+    width: 80%;
+}
+
+.checkouttext6{
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+}
+
+.checkoutinput8{
+    grid-column: 1/span 1;
+    grid-row: 4/span 1;
+    height: 16px;
+    width: 80%;
+}
+
+.checkouttext7{
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+}
+
+.checkoutinput9{
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
+    height: 16px;
+    width: 80%;
+}
+
+.checkouttext8{
+    grid-column: 1/span 1;
+    grid-row: 5/span 1;
+}
+
+.checkoutinput10{
+    grid-column: 1/span 1;
+    grid-row: 6/span 1;
+    height: 16px;
+    width: 80%;
+}
+
+.checkouttext9{
+    grid-column: 2/span 1;
+    grid-row: 5/span 1;
+}
+
+.checkoutinput11{
+    grid-column: 2/span 1;
+    grid-row: 6/span 1;
+    height: 16px;
+    width: 80%;
+}
+
+.checkouttext10{
+    grid-column: 1/span 1;
+    grid-row: 7/span 1;
+}
+
+.checkoutinput12{
+    grid-column: 1/span 1;
+    grid-row: 8/span 1;
+    height: 16px;
+    width: 80%;
+}
+
+.checkouttext11{
+    grid-column: 2/span 1;
+    grid-row: 7/span 1;
+}
+
+.checkoutinput13{
+    grid-column: 2/span 1;
+    grid-row: 8/span 1;
+    height: 16px;
+    width: 80%;
+}
+
+.displaycontainer{
+    width: 100%;
+    grid-column: 3/ span 1;
+}
+
+#checkoutdisplay{
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+    display: grid;
+    width: 100%;
+    background-color: cornsilk;
+    grid-template-columns: 1fr;
+    height: auto;
+    border: solid black 1px;
+}
+
+.checkoutrow{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+input[id^="checkoutquantity"]{
+    height: 16px;
+    width: 30%;
+}
+
+.completetransaction{
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+    display: grid;
+    width: 100%;
+    background-color: cornsilk;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    height: auto;
+    border: solid black 1px;
+    justify-items: center;
+}
+
+.paymentbtn{
+    grid-column: 1/span 2;
+}
+
+/*Search engine*/

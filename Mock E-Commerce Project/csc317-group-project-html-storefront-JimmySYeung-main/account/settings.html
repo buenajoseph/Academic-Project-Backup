@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../storestyle.css">
+
+</head>
+
+<body class="account">
+<table width="80%" height="100" align="center">
+    <tr>
+        <th height="100" background="../background/alligator1.jpg" scope="col" align="left"><a href="../index.html"><img
+                src="../woodbar/home1.png" class="wood"></a></th>
+
+    </tr>
+    <tr>
+        <td>
+            <table width=100% height=100>
+                <td><br><br>
+                    <table style="background-color:whitesmoke;" width=30% height=500 align="left">
+                        <tr class="accounting">
+
+                            <th scope="col" align="center"><img src="../account/profilepic.jpg" height=100 width=100>
+
+                                <label for="img"><br>Select image:</label><br>
+                                <input type="file" id="img" name="img" accept="image/*">
+                                <br><br>
+                            </th>
+
+                        </tr>
+                        <tr>
+                            <script type="text/javascript" src="settings.js"></script>
+                            <th>
+                                <form action="loginnSecurity.html" method="POST">
+                                    <input type="text" id="username" placeholder="Username"><br><br>
+                                    <input type="text" id="fname" placeholder="First Name"><br><br>
+                                    <input type="text" id="lname" placeholder="Last Name"><br><br>
+                                    <input type="text" id="email" placeholder="Email Address">
+                                    <br><br><br><br>
+                                    Address</label><br><br>
+                                    <input type="text" id="address" placeholder="Street Address"><br><br>
+                                    <input type="text" id="city" placeholder="City"><br><br>
+                                    <input type="text" id="state" placeholder="State"><br><br>
+                                    <input type="zip" id="zip" placeholder="Zip Code"><br><br><br>
+                                    <input type="submit" value="Save" onclick="handleSubmit()"/>
+                                    <button type="cancel" onclick="window.location='loginnSecurity.html';return false;">Cancel</button>
+                                </form>
+
+                            </th>
+                        </tr>
+                    </table>
+                </td>
+
+                <td>
+            </table>
+        </td>
+</table>
+
+
+</tr>
+</table><br><br><br><br>
+<div></div>
+</body>
+
+</html>
